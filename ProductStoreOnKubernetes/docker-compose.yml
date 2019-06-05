@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  productstoreonkubernetes:
+    image: ${DOCKER_REGISTRY}productstoreonkubernetes
+    build:
+      context: .
+      dockerfile: ProductStoreOnKubernetes/Dockerfile
